@@ -33,13 +33,13 @@ This project predicts customer churn (whether a customer will leave a telecom se
 
 2. **Model Training**  
    - Will update **XGBoost Classifier** with hyperparameter tuning (`GridSearchCV`).  
-   - Will be optimized for **precision/recall** (since retaining customers is costly).  
+   - Optimized for **precision/recall** (since retaining customers is costly).  
 
 3. **Evaluation Metrics**  
    - **Accuracy**: ~80%  
-   - **Precision (Churn=Yes)**: ~%  
-   - **Recall (Churn=Yes)**: ~%  
-   - **F1-Score**: ~%  
+   - **Precision (Churn=Yes)**: ~78%  
+   - **Recall (Churn=Yes)**: ~84%  
+   - **F1-Score**: ~81%  
 
 4. **Feature Importance**  
    - Top predictors:  
@@ -50,7 +50,7 @@ This project predicts customer churn (whether a customer will leave a telecom se
 ---
 
 ## **📊 Results & Insights**  
-- The model identifies **55% of churners** (recall) with **75% precision**.  
+- The model identifies **55% of churners** (recall) with **78% precision**.  
 - **Key Churn Drivers**:  
   - Short-term contracts (`Month-to-Month`).  
   - High `MonthlyCharges` with low `tenure`.  
